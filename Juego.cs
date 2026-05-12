@@ -82,6 +82,9 @@ namespace Ahorcado
                 Console.Write(_letrasUsadas.Contains(c) ? c : '_');
 
             Console.WriteLine();
+
+            if (_intentosRestantes <= 3)
+                Console.WriteLine("\n¡Último intento! Ten cuidado.");
         }
 
         private void MostrarAhorcado()
