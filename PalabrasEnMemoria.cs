@@ -7,6 +7,10 @@ namespace Ahorcado
     {
         private readonly List<string> _palabras;
 
+        public PalabrasEnMemoria()
+        {
+        }
+
         public PalabrasEnMemoria(string categoria)
         {
             _palabras = categoria.ToLower() switch
