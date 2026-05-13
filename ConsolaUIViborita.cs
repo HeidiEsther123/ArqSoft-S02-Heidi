@@ -13,6 +13,9 @@
         {
             Console.SetCursorPosition(0, 0);
             Console.WriteLine($"=== VIBORITA === Puntos: {_motor.Puntos}");
+            Console.WriteLine("Jugador: Heidi Esther Peña Betanzos");
+            Console.WriteLine("3B");
+            Console.WriteLine("=======================================");
             Console.WriteLine("+" + new string('-', _motor.Ancho) + "+");
 
             for (int y = 0; y < _motor.Alto; y++)
@@ -25,19 +28,27 @@
                     // Lógica de dibujo corregida
                     if (_motor.Cuerpo.First() == pos)
                     {
-                        Console.Write("@"); // cabeza
+                        Console.ForegroundColor = ConsoleColor.Blue;// cabeza
+                        Console.Write("<");
+                        Console.ResetColor(); 
                     }
                     else if (_motor.Cuerpo.Contains(pos))
                     {
-                        Console.Write("o"); // cuerpo
+                        Console.ForegroundColor = ConsoleColor.Cyan; // cuerpo
+                        Console.Write("=");
+                        Console.ResetColor();
                     }
                     else if (_motor.Comida == pos)
                     {
-                        Console.Write("*"); // comida
+                        Console.ForegroundColor = ConsoleColor.Red; // comida
+                        Console.Write("°");
+                        Console.ResetColor();
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
                         Console.Write(" "); // vacío
+                        Console.ResetColor();
                     }
                 }
                 Console.WriteLine("|");
