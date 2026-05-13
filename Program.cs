@@ -6,7 +6,10 @@ namespace Ahorcado
     {
         static void Main(string[] args)
         {
-            var repositorio = new PalabrasEnMemoria();
+            var uiTemp = new ConsolaUI(null);
+            string categoria = uiTemp.PedirCategoria();
+
+            var repositorio = new PalabrasEnMemoria(categoria);
             var motor = new MotorAhorcado(repositorio);
             var ui = new ConsolaUI(motor);
 
@@ -32,13 +35,6 @@ namespace Ahorcado
                 ui.MostrarMensaje($"\n¡Ganaste! La palabra era: {motor.PalabraSecreta}");
             else
                 ui.MostrarMensaje($"\nPerdiste. La palabra era: {motor.PalabraSecreta}");
-
-            if (ui.PreguntarOtraVez())
-            {
-                var nuevoMotor = new MotorAhorcado(repositorio);
-                var nuevaUI = new ConsolaUI(nuevoMotor);
-                nuevaUI.MostrarTablero();
-            }
         }
     }
 }

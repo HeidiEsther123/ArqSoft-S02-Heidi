@@ -21,9 +21,6 @@ namespace Ahorcado
             foreach (char c in _motor.PalabraSecreta)
                 Console.Write(_motor.LetrasUsadas.Contains(c) ? c : '_');
             Console.WriteLine();
-            if (_motor.MostrarPista)
-                Console.WriteLine($"Pista: la palabra empieza con '{_motor.PalabraSecreta[0]}'");
-
         }
 
         public char PedirLetra()
@@ -57,6 +54,13 @@ namespace Ahorcado
 
             Console.WriteLine(etapas[6 - _motor.IntentosRestantes]);
         }
+        public string PedirCategoria()
+        {
+            Console.WriteLine("Elige una categoría: Arquitectura, POO o .NET");
+            string entrada = Console.ReadLine();
+            return string.IsNullOrWhiteSpace(entrada) ? "arquitectura" : entrada;
+        }
+
     }
 }
 
