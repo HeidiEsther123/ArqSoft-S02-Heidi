@@ -46,7 +46,7 @@
                     }
                     else
                     {
-                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write(" "); // vacío
                         Console.ResetColor();
                     }
