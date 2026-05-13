@@ -19,4 +19,6 @@ Este es un proyecto de la viborita, un juego clásico donde el jugador controla 
 4. Cuando la serpiente come comida, crece y el puntaje aumenta.
 5. El juego termina cuando la serpiente choca contra una pared o su propio cuerpo, mostrando el puntaje final.
 
+
 ### Clausula de Ai:
+Yo Heidi Esther Peña Betanzos, declaro que si use AI para ver como implemtentar colores en consola. Utilice Copailot de GitHub, y me ayudo a entender como implementar colores en consola, pero el codigo fue el porporsionado en la actividad y algunas zonas modificadas por mi, la AI solo me ayudo a entender como hacerlo.

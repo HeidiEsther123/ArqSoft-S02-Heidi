@@ -46,16 +46,17 @@
                     }
                     else
                     {
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write(" "); // vacío
-                        Console.ResetColor();
+                        Console.Write(" "); // vacío  
                     }
                 }
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("|");
+                Console.ResetColor();
             }
-
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("+" + new string('-', _motor.Ancho) + "+");
             Console.WriteLine("Flechas: mover | Q: salir");
+            Console.ResetColor();
         }
 
         public ConsoleKey LeerTecla()

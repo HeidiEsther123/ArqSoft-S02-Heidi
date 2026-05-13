@@ -8,7 +8,20 @@ var opcion = Console.ReadLine();
 if (opcion == "1")
 {
     // --- LÓGICA DEL AHORCADO ---
-    var repositorio = new Ahorcado.PalabrasEnMemoria();
+    var repositorioTemp = new Ahorcado.PalabrasEnMemoria();
+    Console.WriteLine("Categorías disponibles:");
+    foreach (var cat in repositorioTemp.ObtenerCategorias())
+    {
+        Console.WriteLine($" - {cat}");
+    }
+
+    Console.Write("Elige categoría (o pulsa ENTER para default): ");
+    var categoria = Console.ReadLine();
+
+    var repositorio = string.IsNullOrWhiteSpace(categoria)
+        ? new Ahorcado.PalabrasEnMemoria()
+        : new Ahorcado.PalabrasEnMemoria(categoria);
+
     var motor = new Ahorcado.MotorAhorcado(repositorio);
     var ui = new Ahorcado.ConsolaUI(motor);
 
