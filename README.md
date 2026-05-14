@@ -41,6 +41,11 @@ Se trabajó primero con una versión inicial (clase dios) y luego se aplicó **r
 ### Codigo de ConsolaUI
 <img width="1265" height="1020" alt="Captura de pantalla 2026-05-12 165815" src="https://github.com/user-attachments/assets/218e71b1-4245-4a11-b7fc-703f4c3c7047" />
 
+
+### Eleccion de categorias
+
+<img width="1913" height="1078" alt="Captura de pantalla 2026-05-13 233315" src="https://github.com/user-attachments/assets/4deea712-fd8d-460f-ac76-d3433e2a8176" />
+
 ---
 
 ### Cláusula
